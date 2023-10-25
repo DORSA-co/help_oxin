@@ -422,18 +422,18 @@ HELPS_ADDRESS = {
     },
 
     'page_offline_report_technical': {
-        "fa": "images/helps/operator_offline_report_search_page_fa.jpg",
-        "en": "images/helps/operator_offline_report_search_page.jpg",
+        "fa": "images/helps/operator_technical_view_report_fa.jpg",
+        "en": "images/helps/operator_technical_view_report.jpg",
     },
 
     'page_offline_report_defect_slider': {
-        "fa": "images/helps/operator_offline_report_search_page_fa.jpg",
-        "en": "images/helps/operator_offline_report_search_page.jpg",
+        "fa": "images/helps/operator_defect_slider_fa.jpg",
+        "en": "images/helps/operator_defect_slider.jpg",
     },
 
     'page_offline_report_binary': {
-        "fa": "images/helps/operator_offline_report_search_page_fa.jpg",
-        "en": "images/helps/operator_offline_report_search_page.jpg",
+        "fa": "images/helps/operator_binary_report_fa.jpg",
+        "en": "images/helps/operator_binary_report.jpg",
     },
 
     'page_offline_report_classification': {
@@ -442,8 +442,8 @@ HELPS_ADDRESS = {
     },
 
     'page_offline_report_width': {
-        "fa": "images/helps/operator_offline_report_search_page_fa.jpg",
-        "en": "images/helps/operator_offline_report_search_page.jpg",
+        "fa": "images/helps/operator_width_report_fa.jpg",
+        "en": "images/helps/operator_width_report.jpg",
     },
 
     "page_online_report": {
