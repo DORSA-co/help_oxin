@@ -5,7 +5,7 @@ basedir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(1, os.path.join(basedir, 'Dependencies'))
 os.chdir(os.path.join(basedir, 'Dependencies'))
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide6 import QtCore, QtGui, QtWidgets
 # from pyqt5_plugins import *
 from PySide6.QtCharts import *
 from PySide6.QtCore import *
@@ -15,7 +15,7 @@ from PySide6.QtWidgets import *
 
 from PyQt5.QtWidgets import QTreeView
 from PyQt5.Qt import QStandardItemModel, QStandardItem
-from PyQt5.QtGui import QFont, QColor
+from PySide6.QtGui import QFont, QColor
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QTreeView
 from PySide6.QtGui import QStandardItemModel, QStandardItem,QColor,QFont
@@ -54,19 +54,18 @@ class help(QMainWindow, ui):
         self.lang_comboBox.currentTextChanged.connect(self.set_language)
 
     def mousePressEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
+        if event.button() == Qt.LeftButton:
             self._old_pos = event.pos()
 
     def mouseReleaseEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
+        if event.button() == Qt.LeftButton:
             self._old_pos = None
 
     def mouseMoveEvent(self, event):
         if not self._old_pos:
             return
         delta = event.pos() - self._old_pos
-        if not self.isMaximized():
-            self.move(self.pos() + delta)
+        self.move(self.pos() + delta)
 
     def activate_(self):
         self.closeButton.clicked.connect(self.close_win)
